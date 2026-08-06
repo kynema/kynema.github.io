@@ -1,2 +1,2 @@
-# exawind.github.io
-Main webpage for ExaWind organization
+# kynema.github.io
+Main high-level webpage for the Kynema software ecosystem and organization
