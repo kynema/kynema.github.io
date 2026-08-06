@@ -89,4 +89,4 @@ Standards
 .. toctree::
    :maxdepth: 2
 
-    standards/developer_glossary
+   standards/developer_glossary
