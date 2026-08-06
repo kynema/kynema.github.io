@@ -11,7 +11,7 @@
 Open-source tools
 -----------------
 
-**Kynema-SGF:** (formerly AMR-Wind)
+**Kynema-SGF** (formerly AMR-Wind):
 `Repository <https://github.com/Kynema/kynema-sgf>`__ |
 `Documentation <https://kynema.github.io/kynema-sgf>`__
 
@@ -22,7 +22,7 @@ Open-source tools
 
 |
 
-**Kynema-UGF:** (formerly Nalu-Wind)
+**Kynema-UGF** (formerly Nalu-Wind):
 `Repository <https://github.com/Kynema/kynema-ugf>`__ |
 `Documentation <https://kynema.github.io/kynema-ugf>`__
 
@@ -45,8 +45,8 @@ Open-source tools
 |
 
 **Kynema manager:**
-`Repository <https://github.com/Kynema/kynema-manager>`__
-`Website <https://kynema.github.io/kynema-manager>`__
+`Repository <https://github.com/Kynema/kynema-manager>`__ |
+`Documentation <https://kynema.github.io/kynema-manager>`__
 
 .. collapse:: Description
 
@@ -61,8 +61,8 @@ Open-source tools
 |
 
 **AMR-Wind frontend:** (not yet updated to current naming convention)
-`Repository <https://github.com/Kynema/kynema-sgf-frontend>`__ |
-`Documentation <https://github.com/Kynema/kynema-sgf-frontend/blob/main/docs/README.md>`__
+`Repository <https://github.com/Exawind/amr-wind-frontend>`__ |
+`Documentation <https://github.com/Exawind/amr-wind-frontend/blob/main/docs/README.md>`__
 
 .. collapse:: Description
 
@@ -74,6 +74,7 @@ Open-source tools
     - Help visualize the sampling outputs (probes, lines, and planes)
     - Help postprocess ABL statistics files.
     - Use it in Jupyter notebooks or python scripts to automate processing.
+
 
 Capabilities
 ------------
