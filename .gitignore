@@ -1,9 +1,11 @@
 # Avoid making conflicting website addresses with other repositories
-amr-wind/
-amr-wind.*
-nalu-wind/
-nalu-wind.*
-exawind-driver/
-exawind-driver.*
-exawind-benchmarks/
-exawind-benchmarks.*
+kynema-sgf/
+kynema-sgf.*
+kynema-ugf/
+kynema-ugf.*
+kynema-driver/
+kynema-driver.*
+kynema-benchmarks/
+kynema-benchmarks.*
+kynema-manager/
+kynema-manager.*
