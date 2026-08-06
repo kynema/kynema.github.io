@@ -1,6 +1,6 @@
-========================
+=======================
  Kynema Software Stack
-========================
+=======================
 
 .. note::
     
@@ -81,3 +81,12 @@ Capabilities
 
 Publications
 ------------
+
+
+Standards
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+    standards/developer_glossary
