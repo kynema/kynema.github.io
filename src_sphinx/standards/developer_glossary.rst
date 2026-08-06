@@ -5,7 +5,7 @@ Developer Glossary
    :sorted:
 
    predict timestep
-     ( description of what this term is supposed to mean)
+     (description of what this term is supposed to mean)
 
      For now, list what the codes actually have:
     
