@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kynema Software Stack &mdash; Kynema Website 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Developer Glossary" href="standards/developer_glossary.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Kynema Website
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="standards/developer_glossary.html">Developer Glossary</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Kynema Website</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Kynema Software Stack</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="kynema-software-stack">
+<h1>Kynema Software Stack<a class="headerlink" href="#kynema-software-stack" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This website is in active development; further details are in the process of being added.</p>
+</div>
+<p><em>insert background of Kynema tools and list directives</em></p>
+<section id="open-source-tools">
+<h2>Open-source tools<a class="headerlink" href="#open-source-tools" title="Link to this heading"></a></h2>
+<p><strong>Kynema-SGF</strong> (formerly AMR-Wind):
+<a class="reference external" href="https://github.com/Kynema/kynema-sgf">Repository</a> |
+<a class="reference external" href="https://kynema.github.io/kynema-sgf">Documentation</a></p>
+<details class="summary-description">
+<summary>Description</summary><p>A massively parallel, block-structured adaptive-mesh, incompressible flow solver. The solver is built on top of the AMReX library, and the SGF suffix stands for structured-grid fluid dynamics.
+The primary applications for Kynema-SGF are: performing large-eddy simulations (LES) of atmospheric boundary layer (ABL) flows, simulating wind farm turbine-wake interactions using actuator disk or actuator line models for turbines, and as a background solver when coupled with a near-body solver (e.g., Kynema-UGF) with overset methodology to perform blade-resolved simulations of multiple wind turbines within a wind farm. For offshore applications, the ability to model the air-sea interaction effects and its impact on the ABL characteristics is another focus for the code development effort.</p>
+</details><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Kynema-UGF</strong> (formerly Nalu-Wind):
+<a class="reference external" href="https://github.com/Kynema/kynema-ugf">Repository</a> |
+<a class="reference external" href="https://kynema.github.io/kynema-ugf">Documentation</a></p>
+<details class="summary-description">
+<summary>Description</summary><p>A generalized, unstructured-grid, massively parallel, incompressible-flow solver. The solver is primarily built upon the packages provided by the Trilinos project, and the suffix UGF stands for unstructured-grid fluid dynamics.
+When coupled to a background solver (e.g., Kynema-SGF) with overset methodology,
+Kynema-UGF serves as a near-body solver to perform geometry-resolved simulations
+of fluid-structure interactions.</p>
+</details><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Kynema driver:</strong>
+<a class="reference external" href="https://github.com/Kynema/kynema-driver">Repository</a></p>
+<details class="summary-description">
+<summary>Description</summary><p>The driver of the hybrid Kynema solver, which combines Kynema-SGF and Kynema-UGF in an overset framework.</p>
+</details><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Kynema manager:</strong>
+<a class="reference external" href="https://github.com/Kynema/kynema-manager">Repository</a> |
+<a class="reference external" href="https://kynema.github.io/kynema-manager">Documentation</a></p>
+<details class="summary-description">
+<summary>Description</summary><p>A project specialization of Spack-Manager. Spack-Manager is a light-weight extension to Spack that is intended to streamline the software development and deployment cycle for software projects on specific machines. A given software project, especially in high performance computing (HPC), typically requires managing multiple software dependencies using multiple compilers and processing devices across many machines. Spack-Manager is quite literal in its name, in that it provides a way to manage and organize these configurations across multiple machines, and multiple projects. Kynema-Manager is specialized towards the Kynema project, which is a set of complex coupled applications for modeling the physics of entire wind farms at high fidelities. However, much of what Kynema-Manager accomplishes is merely an example of how Spack-Manager can be specialized towards any single project or projects.</p>
+</details><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Kynema benchmarks:</strong>
+<a class="reference external" href="https://github.com/Kynema/kynema-benchmarks">Repository</a> |
+<a class="reference external" href="https://kynema.github.io/kynema-benchmarks">Website</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>AMR-Wind frontend:</strong> (not yet updated to current naming convention)
+<a class="reference external" href="https://github.com/Exawind/amr-wind-frontend">Repository</a> |
+<a class="reference external" href="https://github.com/Exawind/amr-wind-frontend/blob/main/docs/README.md">Documentation</a></p>
+<details class="summary-description">
+<summary>Description</summary><p>A tool to help setup, visualize, and postprocess AMR-Wind simulations. Built
+using the TK yaml library. It can:</p>
+<ul class="simple">
+<li><p>Load an AMR-Wind input file and change parameters interactively</p></li>
+<li><p>Plot the simulation domain, including refinement zones and sampling probes/planes</p></li>
+<li><p>Help visualize the sampling outputs (probes, lines, and planes)</p></li>
+<li><p>Help postprocess ABL statistics files.</p></li>
+<li><p>Use it in Jupyter notebooks or python scripts to automate processing.</p></li>
+</ul>
+</details><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="capabilities">
+<h2>Capabilities<a class="headerlink" href="#capabilities" title="Link to this heading"></a></h2>
+</section>
+<section id="publications">
+<h2>Publications<a class="headerlink" href="#publications" title="Link to this heading"></a></h2>
+</section>
+<section id="standards">
+<h2>Standards<a class="headerlink" href="#standards" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="standards/developer_glossary.html">Developer Glossary</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="standards/developer_glossary.html" class="btn btn-neutral float-right" title="Developer Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
