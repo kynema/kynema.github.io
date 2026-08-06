@@ -40,7 +40,7 @@ jobs:
           cat build-output-warnings.txt
           exit $(tail -n 1 build-output-warnings.txt | awk '{print $2}')
       - name: Deploy
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' or github.event_name == 'workflow_dispatch'
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
